@@ -29,10 +29,10 @@ jobs:
 
     - name: Run Tests
       run: |
-        python ImportLogs.py
-        python Solve.py
-        python Test.py
-        python UnitTest.py
+        python application/ImportLogs.py
+        python application/Solve.py
+        python tests/Test.py
+        python tests/UnitTest.py
 
     - name: Build Docker image
       run: |
