@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-script-image
-        image: darksp1der/python-script-image:latest
+        image: darksp1der/python-script-image
         ports:
         - containerPort: 80
