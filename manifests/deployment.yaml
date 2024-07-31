@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-script
+  labels:
+    app: python-script
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-script
+  template:
+    metadata:
+      labels:
+        app: python-script
+    spec:
+      containers:
+      - name: python-script-image
+        image: darksp1der/python-script-image:latest
+        ports:
+        - containerPort: 80
