@@ -18,5 +18,6 @@ spec:
       - name: python-script-image
         command: ["/bin/sh", "-c", "python3 application/Solve.py; while true; do sleep 600; done"]
         image: darksp1der/python-script-image
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
